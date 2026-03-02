@@ -7,14 +7,12 @@ import './home.css';
 import '../index.css';
 import FadeIn from '../components/FadeIn';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import { faHome } from '@fortawesome/free-solid-svg-icons';
 import { Button } from 'react-bootstrap';
 
 function HomePage() {
     const navigate = useNavigate();
     return (
         <>
-        <FontAwesomeIcon icon={faHome} size="xl" style={{cursor: 'pointer', position: 'fixed', top: '15px', left: '15px', zIndex: 999}} onClick={() => window.location.href="/"} className="home" />
             <div className="homePage">
                 <FadeIn>
                     <div className="heading">
