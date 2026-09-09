@@ -11,13 +11,15 @@ import fefo from '../images/fefo-3.png';
 import cal12 from '../images/cal12.png';
 import tapia from '../images/tapia.png';
 import amex from '../images/amex.png';
+import guardrail from '../images/guardrail.png';
+import polybot from '../images/polybot.png';
 
 function ProjectPage() {
     const projects = [
         {
             id: "1",
             name: "Pocket Forest",
-            description: "Pocket Forest is a privacy-first iOS emotional wellness app where all processing happens on-device using Apple Intelligence. Track your mood, voice-journal your thoughts with on-device transcription, and watch a virtual forest grow as you build consistency — your data never leaves your device.",
+            description: "Pocket Forest is a privacy-first iOS emotional wellness app where all processing happens on-device using Apple Intelligence. Track your mood, voice-journal your thoughts with on-device transcription, and watch a virtual forest grow as you build consistency, your data never leaves your device.",
             imageUrl: pocketForest,
             showUrl: true,
             url: "https://pocketforest.app/",
@@ -32,27 +34,41 @@ function ProjectPage() {
         },
         {
             id: "3",
+            name: "GuardRail",
+            description: "After the Chipotle chatbot incident, I wanted a way to test how other chatbots deployed online would hold up under similar pressure, at scale. GuardRail is a red-teaming platform that points parallel adversarial attack lanes at a live chat widget and then uses an LLM judge to score severity and flag risky responses in real time, so you can find and harden weak spots before someone else finds them for you.",
+            imageUrl: guardrail,
+            github: "https://github.com/ardahk/GuardRail"
+        },
+        {
+            id: "4",
+            name: "PolyBot",
+            description: "I lost all my money on a 97% win-probability bet in the bottom of the eigth, understood baseball volatility and wanted to understand how to price it. Wherever there's volatility, there's edge to be found, so I set out to build pure mathematical models to price it. Now polybot deployed on a VM trades daily against the market. Currently running on monopoly money.",
+            imageUrl: polybot,
+            github: "https://github.com/ardahk/poly-baseball"
+        },
+        {
+            id: "5",
             name: "FeFo",
             description: "FeFo (Free Food) is a campus-first iOS app for UC Berkeley students to discover and share free food at campus events. Features an interactive map with color-coded event pins, RSVP and comment systems, a community leaderboard, and real-time event posting powered by Firebase and SwiftUI.",
             imageUrl: fefo,
             github: "https://github.com/ardahk/fefo"
         },
         {
-            id: "4",
+            id: "6",
             name: "LLM Trading Arena",
             description: "A full-stack multi-agent AI trading system where Claude and Gemini compete in stock market simulations using a structured bull-vs-bear debate mechanism before every trade decision. Features a FastAPI backend with specialized analyst and trader agents, real sentiment data from Reddit and Twitter, and a Next.js dashboard with explainable AI reasoning. Built for Cal Hacks.",
             imageUrl: cal12,
             github: "https://github.com/ardahk/cal12.0"
         },
         {
-            id: "5",
+            id: "7",
             name: "Campus Connect",
             description: "Campus Connect is a mobile-first web app that helps students discover campus events and find compatible attendees to go with. Uses Jaccard similarity and Google Gemini to match students by interests and schedule, auto-forms group chats, and generates AI-powered warm introductions between matches. Joint 1st Place Overall Winner at Tapia 2025 Hackathon.",
             imageUrl: tapia,
             github: "https://github.com/ardahk/tapia25"
         },
         {
-            id: "6",
+            id: "8",
             name: "Amex Two-Tower Recommendation",
             description: "An attentive recommendation engine developed with American Express during Break Through Tech AI. Built on a two-tower architecture with attention mechanisms to generate user and item embeddings, capturing complex interaction patterns to personalize financial product recommendations at scale.",
             imageUrl: amex,

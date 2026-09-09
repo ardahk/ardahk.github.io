@@ -20,7 +20,7 @@ function HomePage() {
                         <h1>Arda Höke</h1>
                         <p className='p'>Computer Science @ <i>UC Berkeley</i></p>
                         <div className="buttons">
-                            <Button variant="dark" onClick={() => window.open("https://drive.google.com/file/d/1Nyx6lmORrbcVqC-imHHfkYRnzy0v8Gla/view?usp=sharing")}>Resume</Button>
+                            <Button variant="dark" onClick={() => window.open("https://drive.google.com/file/d/1Ducq94snnTKAFlCcblUTSahzfaomYUoo/view?usp=sharing")}>Resume</Button>
                             <Button variant="dark" onClick={() => {navigate("/projects")}}>Projects</Button>
                         </div>
                         <div className="socialMedia">
